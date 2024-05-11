@@ -3,3 +3,4 @@ Both are expanding and collapsing alternatively.
 The creative thing is when one circle is collapsed it completely inside of another circle.
 Inside the circles two different Words "Life" and "Work" are written. 
 It generally tells the meaning that work is a small part of life.
+Here is a [video link](https://www.instagram.com/reel/C6IVBuyAW8H/?utm_source=ig_web_copy_link) for better understanding.
