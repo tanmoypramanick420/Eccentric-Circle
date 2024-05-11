@@ -1,0 +1,83 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent; /* Add transparent border */
+  box-sizing: border-box; /* Include border in width and height calculations */
+}
+
+.blue {
+  border-color: #3498db; /* Set border color for blue circle */
+  animation: expandCollapseBlue 6s infinite;
+  z-index: 2; /* Ensure blue circle stays on top initially */
+}
+
+.red {
+  border-color: #e74c3c; /* Set border color for red circle */
+  animation: expandCollapseRed 6s infinite;
+  z-index: 1; /* Initially, red circle is behind blue circle */
+}
+
+.text {
+  position: absolute;
+  top: calc(40% + 25px); /* Adjust vertical position */
+  color: #eaed3b; /* Text color */
+  font-size: 14px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+  transform: translateX(-50%); /* Center the text horizontally */
+}
+
+@keyframes expandCollapseBlue {
+  0%, 100% {
+    width: 50px;
+    height: 50px;
+  }
+  50% {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@keyframes expandCollapseRed {
+  0%, 100% {
+    width: 50px;
+    height: 50px;
+  }
+  50% {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.blue {
+  animation-delay: 0s;
+}
+
+.red {
+  animation-delay: 3s;
+}
